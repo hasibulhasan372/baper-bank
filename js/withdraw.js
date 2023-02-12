@@ -11,7 +11,7 @@
     inputWithdrawElement.value = '';
           // Error message 
       if(isNaN(inputWithdrawAmount)){
-        alert('please give a number')
+        alert('please give a number');
         return;
     };
   

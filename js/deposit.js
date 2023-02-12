@@ -6,7 +6,16 @@ document.getElementById('deposit-btn').addEventListener('click', function(){
     const depositField = document.getElementById('input-deposit-field');
     const depositInputValueSting = depositField.value; 
     const depositInputValue = parseFloat(depositInputValueSting);
-    
+
+  // make the deposit input field empty 
+  depositField.value ='';
+//   Error Message 
+    if (isNaN(depositInputValue)){
+        alert('please give a number');
+        return;
+
+    };
+   
     
     // Put the value into the Deposit Area 
     const depositArea = document.getElementById('deposit-area');
@@ -31,6 +40,5 @@ document.getElementById('deposit-btn').addEventListener('click', function(){
 
 
 
-    // make the deposit input field empty 
-    depositField.value ='';
+   
 });
